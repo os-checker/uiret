@@ -24,6 +24,7 @@ pub unsafe extern "C" fn server_ui_handler() {
     );
 }
 
-fn actual_logic_in_rust() {}
+#[inline(never)]
+extern "C" fn actual_logic_in_rust() {}
 
 fn main() {}
